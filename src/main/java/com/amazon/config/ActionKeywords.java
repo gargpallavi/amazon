@@ -25,7 +25,7 @@ public class ActionKeywords {
 	//	driver.quit();
 	}
 	
-	public void search(String object)
+	public static void search(String object)
 	{
 		WebElement searchEle = driver.findElement(By.id("twotabsearchtextbox"));
 		searchEle.sendKeys("Shoes");
