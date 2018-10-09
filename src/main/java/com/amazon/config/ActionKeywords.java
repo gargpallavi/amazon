@@ -22,13 +22,13 @@ public class ActionKeywords {
 		System.setProperty("webdriver.chrome.driver", "D:\\StudyMaterial\\DevOps\\Slelenium\\Data_Driven_Framework\\amazon\\src\\test\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(Constants.URL);
-		driver.quit();
+	//	driver.quit();
 	}
 	
-	/*public void search()
+	public void search(String object)
 	{
 		WebElement searchEle = driver.findElement(By.id("twotabsearchtextbox"));
 		searchEle.sendKeys("Shoes");
-	}*/
+	}
 
 }
