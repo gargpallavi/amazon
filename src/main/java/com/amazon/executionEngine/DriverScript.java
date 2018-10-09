@@ -35,7 +35,7 @@ public class DriverScript {
 	public DriverScript()
 	{
 		akObj = new ActionKeywords();
-		method = akObj.getClass().getMethods();
+		method = akObj.getClass().getDeclaredMethods();
 	}
 	
 		
