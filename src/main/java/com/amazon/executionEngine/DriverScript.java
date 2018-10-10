@@ -7,8 +7,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
-import org.apache.commons.collections4.functors.ExceptionClosure;
-
 import com.amazon.config.ActionKeywords;
 import com.amazon.config.Constants;
 import com.excel.utility.ExcelUtils;
@@ -60,6 +58,7 @@ public class DriverScript {
 				for(;iTestCase<=iTestLastStep;iTestCase++)
 				{
 					sActionKeyword = ExcelUtils.getCellData(iTestCase, Constants.COL_ActionKeyword, Constants.SHEET_TESTCASES);
+					System.out.println("value of iTestCase, COL_ActionKeyword, SHEET_TESTCASE  "+iTestCase +" " + Constants.COL_ActionKeyword +" "+Constants.SHEET_TESTCASES);
 					sPageObject = ExcelUtils.getCellData(iTestCase, Constants.COL_TEST_CASE_ID, Constants.SHEET_TESTCASES);
 					execute_Acions();
 				}

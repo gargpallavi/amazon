@@ -4,8 +4,7 @@
 package com.excel.utility;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -81,4 +80,10 @@ public class ExcelUtils {
 		ExcelWorkSheet = ExcelWorkBook.getSheet(sheetName);
 		return ExcelWorkSheet.getLastRowNum()+1;
 	}
+	//Test Data from excel sheet
+	/*public static ArrayList<Object> getDataFromExcel()
+	{
+	//	XLS_Reader x_Reader = new XLS_Reader(System.getProperty("src\\test\\resources\\DataEngine.xlsx"));
+		ArrayList<Object> data = new ArrayList<Object>();
+	}*/
 }
